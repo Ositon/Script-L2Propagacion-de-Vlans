@@ -1,0 +1,42 @@
+system-view
+#
+vlan 2010
+description OSOS
+#
+vlan 2021
+description OSOS
+#
+#Script L2_Propagacion de vlans Switch Core A
+#
+interface range 25GE 1/0/5 to 25GE 1/0/14
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 1/0/16 to 25GE 1/0/27
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 2/0/5 to 25GE 2/0/12
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 2/0/14 to 25GE 2/0/23
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 2/0/25
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 2/0/27
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 3/0/5 to 25GE 3/0/16
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 3/0/18 to 25GE 3/0/29
+port trunk allow-pass vlan  2010 2021
+!
+interface range 25GE 4/0/5 to 25GE 4/0/30
+port trunk allow-pass vlan  2010 2021
+!
+interface Eth-Trunk0
+port trunk allow-pass vlan  2010 2021
+!
+interface Eth-Trunk1
+port trunk allow-pass vlan  2010 2021

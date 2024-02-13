@@ -1,0 +1,8 @@
+system-view
+#
+vlan 2010
+description OSOS
+#
+vlan 2021
+description OSOS
+#

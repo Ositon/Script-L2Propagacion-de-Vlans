@@ -1,0 +1,42 @@
+#Script L2_Propagacion de vlans Switch Core B
+#
+interface range 25GE 1/0/5 to 25GE 1/0/28
+port trunk allow-pass vlan $X
+!
+interface range 25GE 1/0/30 to 25GE 1/0/40
+port trunk allow-pass vlan $X
+!
+interface range 25GE 2/0/5 to 25GE 2/0/22
+port trunk allow-pass vlan $X
+!
+interface range 25GE 2/0/24 to 25GE 2/0/31
+port trunk allow-pass vlan $X
+!
+interface range 25GE 3/0/5 to 25GE 3/0/15
+port trunk allow-pass vlan $X
+!
+interface range 25GE 3/0/18 to 25GE 3/0/25
+port trunk allow-pass vlan $X
+!
+interface range 25GE 3/0/27 to 25GE 3/0/28 
+port trunk allow-pass vlan $X
+!
+interface 25GE 3/0/30 
+port trunk allow-pass vlan $X
+!
+interface range 25GE 3/0/32 to 25GE 3/0/43
+port trunk allow-pass vlan $X
+!
+interface range 25GE 4/0/5 to 25GE 4/0/13
+port trunk allow-pass vlan $X
+!
+interface range 25GE 4/0/15 to 25GE 4/0/28
+port trunk allow-pass vlan $X
+!
+interface Eth-Trunk0
+port trunk allow-pass vlan $X
+!
+interface Eth-Trunk1
+port trunk allow-pass vlan $X
+
+
